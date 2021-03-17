@@ -13,7 +13,7 @@ const Menus: React.FC = () => {
           <span className="text-wrapper">
             <p className="heading">Burgers, Steak and vegetarian options</p>
             <p className="menus-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper. </p>
-            <Link to="/menus/food">
+            <Link to="/menus">
               <span className="btn-bg"></span>
               <p>View Menu</p>
               </Link>
@@ -26,7 +26,7 @@ const Menus: React.FC = () => {
           <span className="text-wrapper">
             <p  className="heading" >Cocktails, Pitchers, Spirits and more</p> 
             <p className="menus-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper. </p>
-            <Link to="/menus/drinks">
+            <Link to="/menus">
               <span className="btn-bg"></span>
               <p>View Menu</p>
             </Link>

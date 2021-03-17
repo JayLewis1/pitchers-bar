@@ -1,0 +1,100 @@
+.gallery-home-container {
+  width: 100%;
+  display: flex;
+  background-color: $bg;
+  position: relative;
+  .wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    .gallery-grid {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5);
+      gap: 20px;
+      justify-items: stretch;
+      .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .item-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .item-3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .item-4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      .item-5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+    }
+    .gallery-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $purple;
+      width: 180px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: 9.9%;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      font-family: $font;
+      cursor: pointer;
+      p {
+        position: relative;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 10px 0;
+        z-index: 2;
+      }
+    }
+    .gallery-link:hover {
+      p {
+        color: $purple;
+        font-weight: 500;
+      }
+      .btn-bg {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-home-container {
+    .wrapper {
+      .gallery-link {
+        margin: 35px auto;
+      }
+      .gallery-grid {
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pitchers Sports Bar & Grill`,
+    description: `Chepstow sports bar with a friendly atmosphere, vast range of drinks and entertainment.`,
+    author: `Jay Lewis`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,12 +27,36 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon/logo512.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-react-redux`,
+      options: {
+        pathToCreateStoreModule: './src/state/store',
+        serialize: {
+          space: 0,
+          isJSON: true,
+          unsafe: false,
+          ignoreFunction: true,
+        },
+        cleanupOnClient: true,
+        windowKey: '__PRELOADED_STATE__',
+      },
+    },
+      {
+        resolve: `gatsby-plugin-google-fonts`,
+        options: {
+          fonts: [
+            `Karla`,
+            `source sans pro\:300,400,400i, 500, 600, 700, 800`
+          ],
+          display: 'swap'
+      },
+    },
   ],
 }

@@ -1,0 +1,164 @@
+.information-container {
+  width: 100%;
+  background-color: #f7f7f7;
+  .wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    display: flex;
+    .column {
+      width: 30%;
+      // margin-right: 5%;
+      h6 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: $bg;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+      }
+      .contact-wrapper {
+        margin-bottom: 50px;
+        .info-wrapper {
+          display: flex;
+          width: 100%;
+          margin-bottom: 10px;
+          .img-wrapper {
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            img {
+              width: 60%;
+            }
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $bg;
+            word-break: break-all;
+          }
+        }
+      }
+      .social-icons {
+        display: flex;
+        li {
+          list-style-type: none;
+          margin-right: 15px;
+        }
+      }
+      .opening-times,
+      .facilities {
+        width: 100%;
+        li {
+          list-style-type: none;
+          display: flex;
+          width: 100%;
+          margin-bottom: 10px;
+          .time {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 400px) {
+//   .information-container {
+//     .wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       padding: 50px 10%;
+//       .column {
+//         width: 100%;
+//         margin-bottom: 50px;
+//       }
+//       #facilities {
+//         grid-row-start: 1;
+//         grid-column-start: 2;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 580px) {
+  .information-container {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 10%;
+      .column {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      #facilities {
+        grid-row-start: 1;
+        grid-column-start: 2;
+      }
+    }
+  }
+}
+@media (min-width: 580px) and (max-width: 850px) {
+  .information-container {
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 100px 25px;
+      width: 100%;
+      gap: 3%;
+      .column {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0 15px;
+        .contact-wrapper {
+          .info-wrapper {
+            .img-wrapper {
+              margin: 0;
+            }
+          }
+        }
+      }
+      #facilities {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        padding-left: 10%;
+        margin: 0;
+      }
+      #openingTimes {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .information-container {
+    .wrapper {
+      #openingTimes {
+        margin: 0 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .information-container {
+    .wrapper {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 1101px) {
+  .information-container {
+    .wrapper {
+      #openingTimes {
+        margin: 0 5%;
+      }
+    }
+  }
+}

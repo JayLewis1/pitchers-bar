@@ -1,0 +1,201 @@
+.menu-home-container {
+  width: 1100px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  .menu-split {
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    .wrapper {
+      width: 50%;
+      display: flex;
+  
+      .img-wrapper {
+        width: 30%;
+        img {
+          width: 100%;
+          border-radius: 3px;
+        }
+      }
+      .text-wrapper {
+        width: 70%;
+        margin: 0 25px 0 15px;
+        .heading {
+          font-size: 1.2rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          margin-top: 15px;
+          margin-bottom: 30px;
+        }
+        a {
+          display: block;
+          background-color: $purple;
+          width: 180px;
+          margin-top: 15px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 2px;
+          position: relative;
+          border: 2px $purple solid;
+          overflow: hidden;
+          p {
+            position: relative;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 10px 0;
+            z-index: 2;
+          }
+        }
+        a:hover {
+          p{ 
+            color: $purple;
+            font-weight: 500;
+          }
+          .btn-bg {
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .menu-home-container {
+    width: 100%;
+    margin-bottom: 0;
+    .menu-split {
+      height: 100%;
+      flex-direction: column;
+      .wrapper{ 
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        width: 100%;
+        .img-wrapper {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin: 0 auto;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          img {
+            width: 150%;
+            height: 150%;
+            transform: translate(0, -20px);
+          }
+        }
+        .text-wrapper {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          a {
+            margin: auto;
+            margin-bottom: 0;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 610px) {
+  .menu-home-container {
+    width: 100%;
+    .menu-split {
+      height: 100%;
+      // flex-direction: column;
+      .wrapper{ 
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        .img-wrapper {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin: 0 auto;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          img {
+            width: 150%;
+            height: 150%;
+            transform: translate(0, -20px);
+
+          }
+        }
+        .text-wrapper {
+          width: 80%;
+    
+          margin: 0 auto;
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          a {
+            margin: auto;
+            margin-bottom: 0;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+
+.menus-info {
+  display: none;
+}
+}
+@media (min-width: 611px) and (max-width: 1100px) {
+  .menu-home-container {
+    width: 100%;
+    .menu-split {
+      height: 100%;
+      .wrapper{ 
+        flex-direction: column;
+        .img-wrapper {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin: 0 auto;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          img {
+            width: 150%;
+            height: 150%;
+            transform: translate(0, -20px);
+
+          }
+        }
+        .text-wrapper {
+          width: 80%;
+        
+          margin: 0 auto;
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          a {
+            margin: auto;
+            margin-bottom: 0;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}

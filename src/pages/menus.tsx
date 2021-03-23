@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Layout from "../components/layout/layout";
 import Seo from "../components/seo";
+import Menu from "../components/menus/Menu";
+
+const breakfastMenu =  require("../../menus/food/breakfast.json");
 
 const Menus = () => {
   const [menuSelection, setMenuSelection] = useState("");
@@ -19,10 +22,13 @@ const Menus = () => {
             <p>Drinks</p>
           </button>
       </span>
-      <div className="menu-wrapper">
+      <div className="menu-selection-wrapper">
         { menuSelection === "food" && <p>Food Menus</p> }
         { menuSelection === "drinks" && <p>Drinks Menus</p> }
       </div>
+      {breakfastMenu.map((m: any) => (
+        <Menu key={m.key} name={m.name} sections={m.sections} />
+      ))}
     </div>
     </Layout>
   )

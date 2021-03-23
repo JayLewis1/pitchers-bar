@@ -1846,6 +1846,50 @@ body .App {
   text-align: center;
 }
 
+.menus-container .menu-selection {
+  width: 50%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 50px auto;
+}
+
+.menus-container .menu-selection button {
+  border: none;
+  outline: none;
+  margin: 0;
+  width: 33.33%;
+  background-color: #fcfcfc;
+  border: #912070 2px solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.menus-container .menu-selection button p {
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #912070;
+  z-index: 2;
+  margin: 0;
+}
+
+.menus-container .menu-selection .selected {
+  background-color: #912070;
+}
+
+.menus-container .menu-selection .selected p {
+  color: #fcfcfc;
+}
+
 .menu-wrapper {
   width: 50%;
   margin: 0 auto;

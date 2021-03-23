@@ -58,6 +58,51 @@
       text-align: center;
     }
   }
+  .menu-selection {
+    width: 50%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    button {
+      border: none;
+      outline: none;
+      margin: 0;
+      width: 33.33%;
+      background-color: $white;
+
+      border: $purple 2px solid;
+      // border-radius: 2px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+      p {
+        position: relative;
+        font-family: $font;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $purple;
+        z-index: 2;
+        margin: 0;
+      }
+    }
+    .selected {
+      background-color: $purple;
+      p {
+        color: $white;
+      }
+    }
+    button:hover {
+      // p {
+      //   color: $purple;
+      //   font-weight: 500;
+      // }
+      // .btn-bg {
+      //   min-width: 100%;
+      // }
+    }
+  }
 }
 .menu-wrapper {
   width: 50%;

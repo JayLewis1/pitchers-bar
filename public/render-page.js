@@ -3419,7 +3419,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-google-fonts/gatsby-ssr */ "./node_modules/gatsby-plugin-google-fonts/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "fonts": ["Karla:200, 300, 400, 500, 600, 700, 800", "source sans pro:300,400,400i, 500, 600, 700, 800, 900"],
+    "fonts": ["Karla:200, 300, 400, 500, 600, 700, 800", "source sans pro:300,400,400i, 500, 600, 700, 800", "Work Sans"],
     "display": "swap"
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:

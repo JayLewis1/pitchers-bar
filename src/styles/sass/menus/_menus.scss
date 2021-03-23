@@ -10,54 +10,6 @@
     font-size: 1rem;
     font-weight: 400;
   }
-  .button-wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    // margin-bottom: 0px;
-    button {
-      border: none;
-      outline: none;
-      margin: 10px 25px;
-      background-color: $purple;
-      border: 2px $purple solid;
-      padding: 8px 25px;
-      border-radius: 2px;
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      z-index: 1;
-      p {
-        position: relative;
-        font-family: $font;
-        font-size: 1rem;
-        color: white;
-        z-index: 2;
-      }
-    }
-    button:hover {
-      p {
-        color: $purple;
-        font-weight: 500;
-      }
-      .btn-bg {
-        min-width: 100%;
-      }
-    }
-  }
-  .menu-selection-wrapper {
-    width: 100%;
-    // height: 70vh;
-    padding: 70px;
-    p {
-      font-size: 2rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      text-align: center;
-    }
-  }
   .menu-selection {
     width: 50%;
     height: 45px;
@@ -183,14 +135,24 @@
 }
 
 @media (max-width: 519px) {
+  .menus-container {
+    .menu-selection {
+      width: 90%;
+    }
+  }
   .menu-wrapper {
     width: 90%;
   }
 }
 
 @media (min-width: 520px) and (max-width: 850px) {
+  .menus-container {
+    .menu-selection {
+      width: 70%;
+    }
+  }
   .menu-wrapper {
-    width: 70%;
+    width: 60%;
   }
 }
 

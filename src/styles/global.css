@@ -1789,63 +1789,6 @@ body .App {
   font-weight: 400;
 }
 
-.menus-container .button-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px auto;
-}
-
-.menus-container .button-wrapper button {
-  border: none;
-  outline: none;
-  margin: 10px 25px;
-  background-color: #912070;
-  border: 2px #912070 solid;
-  padding: 8px 25px;
-  border-radius: 2px;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.menus-container .button-wrapper button p {
-  position: relative;
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  color: white;
-  z-index: 2;
-}
-
-.menus-container .button-wrapper button:hover p {
-  color: #912070;
-  font-weight: 500;
-}
-
-.menus-container .button-wrapper button:hover .btn-bg {
-  min-width: 100%;
-}
-
-.menus-container .menu-selection-wrapper {
-  width: 100%;
-  padding: 70px;
-}
-
-.menus-container .menu-selection-wrapper p {
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .menus-container .menu-selection {
   width: 50%;
   height: 45px;
@@ -1982,14 +1925,20 @@ body .App {
 }
 
 @media (max-width: 519px) {
+  .menus-container .menu-selection {
+    width: 90%;
+  }
   .menu-wrapper {
     width: 90%;
   }
 }
 
 @media (min-width: 520px) and (max-width: 850px) {
-  .menu-wrapper {
+  .menus-container .menu-selection {
     width: 70%;
+  }
+  .menu-wrapper {
+    width: 60%;
   }
 }
 

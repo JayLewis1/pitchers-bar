@@ -9,7 +9,7 @@ interface ComponentProps {
  const MenuSection = ({name, items} :ComponentProps ) => {
   return (
       <div className="menu-section">
-      <h3 className="section-name">{name}</h3>
+      {/* <h3 className="section-name">{name}</h3> */}
       {items.map((item: any) => (
         <MenuItem
         key={item.name}

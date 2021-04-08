@@ -1774,23 +1774,38 @@ body .App {
   }
 }
 
-.menus-container {
-  width: 1100px;
-  margin: 0 auto;
+.menu-select-container {
+  width: 100%;
   padding-top: 70px;
+  background-color: #0f110d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.menus-container h3 {
+.menu-select-container .menu-title {
+  font-size: 2.2rem;
+  color: #fcfcfc;
+  text-transform: uppercase;
   text-align: center;
-  width: 40%;
-  margin: 0 auto;
-  margin-top: 50px;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 15px;
 }
 
-.menus-container .menu-selection {
-  width: 50%;
+.menu-select-container .menu-selection {
+  width: 500px;
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1799,23 +1814,23 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 50px auto;
+  margin: 25px auto;
+  margin-bottom: 40px;
 }
 
-.menus-container .menu-selection button {
+.menu-select-container .menu-selection button {
   border: none;
   outline: none;
   margin: 0;
   width: 33.33%;
   background-color: #fcfcfc;
-  border: #912070 2px solid;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   z-index: 1;
 }
 
-.menus-container .menu-selection button p {
+.menu-select-container .menu-selection button p {
   position: relative;
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
@@ -1825,12 +1840,18 @@ body .App {
   margin: 0;
 }
 
-.menus-container .menu-selection .selected {
+.menu-select-container .menu-selection .selected {
   background-color: #912070;
 }
 
-.menus-container .menu-selection .selected p {
+.menu-select-container .menu-selection .selected p {
   color: #fcfcfc;
+}
+
+.menus-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .menu-wrapper {
@@ -1854,9 +1875,25 @@ body .App {
   margin-bottom: 30px;
 }
 
+.menu-wrapper .section-selector {
+  width: 60%;
+  height: 45px;
+  border: none;
+  background-color: #0f110d;
+  border-radius: 2px;
+  outline: none;
+  color: #fcfcfc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 30px auto;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 25px;
+}
+
 .menu-wrapper .menu-section {
   width: 100%;
-  margin-top: 20px;
 }
 
 .menu-wrapper .menu-section .section-name {
@@ -1925,7 +1962,7 @@ body .App {
 }
 
 @media (max-width: 519px) {
-  .menus-container .menu-selection {
+  .menu-select-container .menu-selection {
     width: 90%;
   }
   .menu-wrapper {
@@ -1934,7 +1971,7 @@ body .App {
 }
 
 @media (min-width: 520px) and (max-width: 850px) {
-  .menus-container .menu-selection {
+  .menu-select-container .menu-selection {
     width: 70%;
   }
   .menu-wrapper {

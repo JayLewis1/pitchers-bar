@@ -12,27 +12,30 @@ const Menus = () => {
   return (
     <Layout>
       <Seo title="menus" />
-    <div className="menus-container">
-      <span className="menu-selection">
-          <button 
-            className={menuSelection === "breakfast" ? "selected" : ""}
-            onClick={() => setMenuSelection("breakfast")} >
+      <div className="menu-select-container">
+        <h3 className="menu-title">Menus</h3>
+        <span className="menu-selection">
+            <button 
+              className={menuSelection === "breakfast" ? "selected" : ""}
+              onClick={() => setMenuSelection("breakfast")} >
+              <span className="btn-bg"></span>
+              <p>Breakfast</p>
+            </button>
+            <button 
+              className={menuSelection === "main" ? "selected" : ""}
+              onClick={() => setMenuSelection("main")} >
             <span className="btn-bg"></span>
-            <p>Breakfast</p>
-          </button>
-          <button 
-            className={menuSelection === "main" ? "selected" : ""}
-            onClick={() => setMenuSelection("main")} >
-          <span className="btn-bg"></span>
-            <p>Main Menu</p>
-          </button>
-          <button
-            className={menuSelection === "drinks" ? "selected" : ""}
-            onClick={() => setMenuSelection("drinks")} >
-          <span className="btn-bg"></span>
-            <p>Drinks</p>
-          </button>
-      </span>
+              <p>Main Menu</p>
+            </button>
+            <button
+              className={menuSelection === "drinks" ? "selected" : ""}
+              onClick={() => setMenuSelection("drinks")} >
+            <span className="btn-bg"></span>
+              <p>Drinks</p>
+            </button>
+        </span>
+      </div>
+    <div className="menus-container">
       {  menuSelection === "breakfast" &&  
       <Fragment>   
         {breakfastMenu.map((m: any) => (

@@ -18,7 +18,7 @@ interface ComponentProps {
             { vegetarian  &&
             <p className="veggie">v</p>
             }
-            <p className="price">£{price}</p>   
+            <p className="price">£{price.toString()}</p>  
           </span>
           <p className="description">{description}</p> 
     </div>

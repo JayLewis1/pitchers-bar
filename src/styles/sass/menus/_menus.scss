@@ -1,30 +1,35 @@
-.menus-container {
-  width: 1100px;
-  margin: 0 auto;
+.menu-select-container {
+  width: 100%;
+  // height: 200px;
   padding-top: 70px;
-  h3 {
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .menu-title {
+    font-size: 2.2rem;
+    color: $white;
+    text-transform: uppercase;
     text-align: center;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 50px;
-    font-size: 1rem;
-    font-weight: 400;
+    font-family: $font;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 15px;
   }
   .menu-selection {
-    width: 50%;
+    width: 500px;
     height: 45px;
     display: flex;
     flex-direction: row;
-    margin: 50px auto;
+    margin: 25px auto;
+    margin-bottom: 40px;
     button {
       border: none;
       outline: none;
       margin: 0;
       width: 33.33%;
       background-color: $white;
-
-      border: $purple 2px solid;
-      // border-radius: 2px;
       position: relative;
       cursor: pointer;
       overflow: hidden;
@@ -45,16 +50,21 @@
         color: $white;
       }
     }
-    button:hover {
-      // p {
-      //   color: $purple;
-      //   font-weight: 500;
-      // }
-      // .btn-bg {
-      //   min-width: 100%;
-      // }
-    }
   }
+}
+
+.menus-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  // h3 {
+  //   text-align: center;
+  //   width: 40%;
+  //   margin: 0 auto;
+  //   margin-top: 50px;
+  //   font-size: 1rem;
+  //   font-weight: 400;
+  // }
 }
 .menu-wrapper {
   width: 50%;
@@ -70,21 +80,24 @@
     margin-bottom: 30px;
   }
   .section-selector {
-    width: 80%;
+    width: 60%;
     height: 45px;
-    border: 2px $purple solid;
+    border: none;
+    background-color: $bg;
     border-radius: 2px;
     outline: none;
+    color: $white;
     font-family: $font;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     cursor: pointer;
+    padding: 5px 25px;
   }
   .menu-section {
     width: 100%;
-    margin-top: 20px;
+    // margin-top: 15px;
     .section-name {
       margin: 0 auto;
       margin-bottom: 25px;
@@ -148,7 +161,7 @@
 }
 
 @media (max-width: 519px) {
-  .menus-container {
+  .menu-select-container {
     .menu-selection {
       width: 90%;
     }
@@ -159,7 +172,7 @@
 }
 
 @media (min-width: 520px) and (max-width: 850px) {
-  .menus-container {
+  .menu-select-container {
     .menu-selection {
       width: 70%;
     }

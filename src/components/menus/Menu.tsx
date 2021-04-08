@@ -8,15 +8,13 @@ interface ComponentProps {
 
  const Menu = ({name, sections} :ComponentProps ) => {
   const [sectionName, setSectionName] = useState(sections[0].name);
-  // console.log(sections[0].name);
    const onChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSectionName(e.target.value)
    } 
 
   return (
     <div className="menu-wrapper">
-    <h2 className="menu-name">{name}</h2>
-    { name === "Drinks" || name === "Main" ?
+    {/* { name === "Drinks" || name === "Main" ? */}
     <Fragment>
       <select className="section-selector" value={sectionName} onChange={(e) => onChange(e)}>
       {sections.map((s: any, index:number)=> (
@@ -35,7 +33,7 @@ interface ComponentProps {
       </Fragment>
     ))}
     </Fragment>
-    : 
+    {/* : 
     <Fragment>
     {sections.map((s: any, index:number)=> (
         <MenuSection
@@ -45,7 +43,7 @@ interface ComponentProps {
         />
   ))}
   </Fragment>
-  }
+  } */}
   </div>
   )
 }

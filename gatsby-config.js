@@ -54,7 +54,13 @@ module.exports = {
           fonts: [
             `Karla\:200, 300, 400, 500, 600, 700, 800`,
             `source sans pro\:300,400,400i, 500, 600, 700, 800`,
-            `Work Sans`
+            `Work Sans\:200`,
+            `Work Sans\:300`,
+            `Work Sans\:400`,
+            `Work Sans\:600`,
+            `Work Sans\:700`,
+            `Work Sans\:800`,
+            `Work Sans\:900`
           ],
           display: 'swap'
       },

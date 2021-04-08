@@ -4,6 +4,8 @@ import Seo from "../components/seo";
 import Menu from "../components/menus/Menu";
 
 const breakfastMenu =  require("../../menus/food/breakfast.json");
+const mainMenu =  require("../../menus/food/main.json");
+const drinksMenu =  require("../../menus/drinks/drinks.json");
 
 const Menus = () => {
   const [menuSelection, setMenuSelection] = useState("breakfast");
@@ -31,28 +33,27 @@ const Menus = () => {
             <p>Drinks</p>
           </button>
       </span>
-      {/* <div className="menu-selection-wrapper">
-        { menuSelection === "food" && <p>Food Menus</p> }
-        { menuSelection === "drinks" && <p>Drinks Menus</p> }
-      </div> */}
       {  menuSelection === "breakfast" &&  
       <Fragment>   
         {breakfastMenu.map((m: any) => (
-        <Menu key={m.key} name={m.name} sections={m.sections} />
+        <Menu key={m.name} name={m.name} sections={m.sections} />
        ))}
       </Fragment> 
       }
       {  menuSelection === "main" &&  
-        <div className="menu-wrapper">
-          <h2 className="menu-name">Main Menu</h2>
-        </div>
+      <Fragment>   
+        {mainMenu.map((m: any) => (
+        <Menu key={m.name} name={m.name} sections={m.sections} />
+       ))}
+      </Fragment> 
       }
-      {  menuSelection === "drinks" &&  
-        <div className="menu-wrapper">
-          <h2 className="menu-name">Drinks</h2>
-        </div>
+        {  menuSelection === "drinks" &&  
+      <Fragment>   
+        {drinksMenu.map((m: any) => (
+        <Menu key={m.name} name={m.name} sections={m.sections} />
+       ))}
+      </Fragment> 
       }
- 
     </div>
     </Layout>
   )

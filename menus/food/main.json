@@ -1,0 +1,546 @@
+[
+  {
+    "name": "Main",
+    "sections": [
+      {
+        "name" : "Baguettes",
+        "items" : [
+          {
+           "name": "Breakfast Baguette",
+           "description" : "Bacon, sausage and a fried egg",
+           "price" : 4.45,
+           "vegetarian" : false
+          },
+          {
+            "name": "Hunters Chicken Melt",
+            "description" : "Chicken, bacon, cheese & BBQ sauce",
+            "price" : 5.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Tuna Melt",
+            "description" : "",
+            "price" : 4.25,
+            "vegetarian" : false
+           },
+           {
+            "name": "Ham, Tomato & Cheese",
+            "description" : "",
+            "price" : 4.25,
+            "vegetarian" : false
+           },
+           {
+            "name": "Cheese & Tomato",
+            "description" : "",
+            "price" : 3.95,
+            "vegetarian" : true
+           },
+           {
+            "name": "Steak & Onion",
+            "description" : "",
+            "price" : 5.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Grilled Halloumi",
+            "description" : "With sweet chilli sauce",
+            "price" : 5.25,
+            "vegetarian" : true
+           }
+        ]
+      },
+      {
+        "name" : "Classics",
+        "items" : [
+          {
+           "name": "Kebab Skewers",
+           "description" : "3 skewers of either chicken or halloumi smothered in a choice of garlic mayo, sweet chilli or BBQ sauce. Served on a bed of spicy rice with side salad and pitta bread",
+           "price" : 6.75,
+           "vegetarian" : true
+          },
+          {
+            "name": "Ham, Egg & Chips",
+            "description" : "2 slices of thick ham, 2 eggs, peas and chips",
+            "price" :5.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Footlong Hotdog",
+            "description" : "Pork & caramalised onion, sausage served in a soft roll with fried onions & chips",
+            "price" : 5.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Half A Chicken",
+            "description" : "Choose from plain, cajun or BBQ with side salad, home-made slaw and chips",
+            "price" : 5.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Fish & Chips",
+            "description" : "Cod fillet in home-mafe beer batter, served with mushy peas or garden peas & tartart sauce",
+            "price" : 7.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Red Thai Curry",
+            "description" : "Home-made vegetarian or chicken, served with rice chips or half and half",
+            "price" : 5.50,
+            "vegetarian" : true
+           }
+        ]
+      },
+      {
+        "name" : "Grill",
+        "items" : [
+          {
+           "name": "Hunters Chicken",
+           "description" : "Succulent chicken breast with bacon & cheese, smothered in BBQ sauce served with chips & salad granish",
+           "price" : 6.75,
+           "vegetarian" : false
+          },
+          {
+            "name": "10oz Gammon",
+            "description" : "Topped with a fried egg and a pineapple ring, served with chips & peas",
+            "price" : 7.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "10oz Rump Steak",
+            "description" : "Juicy and full of flavour, served with chips, 1/2 grilled tomato, peas & onion rings",
+            "price" : 8.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "10oz Sirolion Steak",
+            "description" : "Just gorgeous! Served with chips, 1/2 grilled tomato, peas & onion rings",
+            "price" : 11.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "20oz Mixed Grill",
+            "description" : "Hungry? Do it! Rump steak, gammon steak, pork steak, lamb chop & a sausage served with chips, grilled tomato, peas & onion rings ",
+            "price" :13.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Half Rack of Ribs",
+            "description" : "Hald rack of succulent pork ribs in BBQ sauce, served with chips and peas",
+            "price" : 7.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Surf & Turf",
+            "description" : "5oz rump steak & 8 scampi bites, served with chips, 1/2 grilled tomato, peas & tartar sauce",
+            "price" : 9.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Chicken Sharer",
+            "description" : "6 chicken goujons, 10 chicken bites, 6 chicken wings, garlic bread and wedges",
+            "price" : 9.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Steak Sauces",
+            "description" : "Peppercorn, Diane or Stilton",
+            "price" : 1.50,
+            "vegetarian" : false
+           }
+        ]
+      },  {
+        "name" : "Burgers",
+        "items" : [
+          {
+           "name": "Ref",
+           "description" : "8oz beef or southern fried chicken burger served with just cheese, no salad or sauce",
+           "price" : 4.95,
+           "vegetarian" : false
+          },
+          {
+            "name": "Knockout",
+            "description" : "8oz chilli beef burger stuffed with chillies, served with Mexicana cheese, jalapenos & hot chilli sauce",
+            "price" : 8.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Scrum Half",
+            "description" : "8oz beef burger served with bacon, cheese ,fried onions & BBQ dip",
+            "price" : 7.25,
+            "vegetarian" : false
+           },
+           {
+            "name": "Flying Winger",
+            "description" : "Souther fried chicken burger seved with sweet chilli dip",
+            "price" : 6.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Grand Slam",
+            "description" : "8oz beef burger & southern fried chicken burger served with bacon, cheese and BBQ dip",
+            "price" : 9.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Goal",
+            "description" : "8oz beef burger, served with 3 mozzarella cheese sticks, onion rings and a BBQ dip",
+            "price" : 6.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "On The Bench",
+            "description" : "Halloumi burger served with grilled red peppers & a sweet chilli dip",
+            "price" : 7.95,
+            "vegetarian" : true
+           },
+           {
+            "name": "Substitute",
+            "description" : "Jackfruit burger served with sweet potato fries & cool mayo dip",
+            "price" : 6.75,
+            "vegetarian" : true
+           },
+           {
+            "name": "Extra Time",
+            "description" : "8oz beef burger served with bacon, fried egg, hash brown & BBQ dip",
+            "price" : 7.25,
+            "vegetarian" : false
+           },
+           {
+            "name": "Elvis Burger",
+            "description" : "2 x 8oz beef burgers served with 2 slices of bacon, 2 slices of cheese and BBQ dip",
+            "price" : 9.75,
+            "vegetarian" : false
+           }
+        ]
+      }, {
+        "name" : "Kids",
+        "items" : [
+          {
+           "name": "Cod Goujons",
+           "description" : "5 cod gouhons served with peas or beans & chips",
+           "price" : 4.50,
+           "vegetarian" : false
+          },
+          {
+            "name": "Sausage",
+            "description" : "2 pork or vegetarian sausages served with mash, peas & gravy",
+            "price" : 4.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Chicken Goujons",
+            "description" : "4 chicken goujons served with peas or beans & chips",
+            "price" : 4.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Pizza",
+            "description" : "Mickey Mouse shaped cheese or pepperoni pizza served with chips",
+            "price" : 4.50,
+            "vegetarian" : true
+           }
+        ]
+      },  {
+        "name" : "Lite Bites",
+        "items" : [
+          {
+           "name": "Chicken Goujons",
+           "description" : "6 chicken goujons served with a side salad and BBQ dip",
+           "price" : 4.25,
+           "vegetarian" : false
+          },
+          {
+            "name": "Chicken Wings",
+            "description" : "5 chicken wings glazed in BBQ sauce served with a side salad and BBQ dip",
+            "price" : 4.55,
+            "vegetarian" : false
+           },
+           {
+            "name": "Mozzarella Sticks",
+            "description" : "6 breaded mozzarella sticks served with a side salad and salsa dip",
+            "price" :  3.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Dirty Fries",
+            "description" : "Fries covered in cajun spice, worcestershire sauce, chopped up bacon, diced bell peppers & spring onion topped with cheese",
+            "price" : 4.50,
+            "vegetarian" : false
+           },
+           {
+            "name": "Vegetarian Dirty Fries",
+            "description" : "Fries covered in cajun spice, chopped halloumi, bell peppers & spring onion topped with vegan cheese",
+            "price" : 4.50,
+            "vegetarian" : true
+           }
+        ]
+      } , {
+        "name" : "Jackets",
+        "items" : [
+          {
+           "name": "Baked beans",
+           "description" : "",
+           "price" : 3.75,
+           "vegetarian" : true
+          },
+          {
+            "name": "Cheese",
+            "description" : "",
+            "price" : 3.75,
+            "vegetarian" : true
+           },
+           {
+            "name": "Home-made Coleslaw",
+            "description" : "",
+            "price" : 3.75,
+            "vegetarian" : true
+           },
+           {
+            "name": "Tuna Mayonaise",
+            "description" : "",
+            "price" : 4.25,
+            "vegetarian" : false
+           },
+           {
+            "name": "Beef Chilli",
+            "description" : "",
+            "price" : 4.45,
+            "vegetarian" : false
+           },
+           {
+            "name": "3 Bean Chilli",
+            "description" : "",
+            "price" : 4.45,
+            "vegetarian" : true
+           },
+           {
+            "name": "Hunters Chicken",
+            "description" : "",
+            "price" : 5.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Extra filling (beans, cheese, coleslaw)",
+            "description" : "",
+            "price" : 0.60,
+            "vegetarian" : false
+           },
+           {
+            "name": "Extra filling (tuna, chilli, 3 bean, hunters chicken)",
+            "description" : "",
+            "price" : 1.00,
+            "vegetarian" : false
+           }
+        ]
+      },
+      {
+        "name" : "Pizza",
+        "items" : [
+          {
+            "name": "Choose your toppings",
+            "description" : "Mozzarella, fresh tomato, chopped peppers, red onion, sweetcorn, pineapple, ham, mushrooms, jalapenos, olives",
+            "price" : 0,
+            "vegetarian" : false
+           },
+           {
+            "name": "2 toppings",
+            "description" : "",
+            "price" : 7.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "3 toppings",
+            "description" : "",
+            "price" : 8.10,
+            "vegetarian" : false
+           },
+           {
+            "name": "4 toppings",
+            "description" : "",
+            "price" : 8.25,
+            "vegetarian" : true
+           },
+          {
+           "name": "Margherita Pizza Twist",
+           "description" : "Cheddar & Mozzarella Calonze pizza served with side salad & chips",
+           "price" : 7.95,
+           "vegetarian" : true
+          },
+          {
+            "name": "Pepperoni",
+            "description" : "Cheddar & Pepperoni Calsone pizza served with side salad & chips",
+            "price" : 8.45,
+            "vegetarian" : false
+           }
+          ]
+          },  {
+        "name" : "Salad",
+        "items" : [
+          {
+           "name": "Avocado & Three Bean",
+           "description" : "Crushed avocado & 3 bean mix served on a bed of mixed leaves, sweetcorn, diced bell peppers & halved cherry tomatoes",
+           "price" : 5.95,
+           "vegetarian" : true
+          },
+          {
+            "name": "Feta Cheese & Avocado",
+            "description" : "Served on a bed of iceberg lettuce with red peppers and cucumber",
+            "price" : 5.95,
+            "vegetarian" : true
+           },
+           {
+            "name": "Chicken & Bacon",
+            "description" : "Served on a bed of mixed leaves, red onion, diced peppers, halved cherry tomatoes, sweetcorn & cucumber",
+            "price" : 6.95,
+            "vegetarian" : false
+           },
+           {
+            "name": "Halloumi & Mango",
+            "description" : "Served on a bed of mixed leaves, sliced peppers & chopped coriander",
+            "price" : 6.95,
+            "vegetarian" : true
+           },  
+           {
+            "name": "Prawn",
+            "description" : "Served on a bed of little gem lettuce leaves, cucumber and cress with Marie-rose dressing",
+            "price" : 6.95,
+            "vegetarian" : false
+           },  {
+            "name": "BLT Egglets",
+            "description" : "2 hardboiled eggs halved and topped with bacon, cherry tomato and cool mayo served on a bed of lettuce",
+            "price" : 5.95,
+            "vegetarian" : true
+           }
+        ]
+      } , {
+        "name" : "Sides",
+        "items" : [
+          {
+           "name": "Nachos",
+           "description" : "Smothered in cheese, guacamole, salsa & sour cream topped with chillies",
+           "price" : 3.50,
+           "vegetarian" : true
+          },
+          {
+            "name": "Nachos Sharer",
+            "description" : "As above but enough for 2",
+            "price" : 6.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Home-made Coleslaw",
+            "description" : "",
+            "price" :1.25,
+            "vegetarian" : false
+           },
+           {
+            "name": "Corn on the cob",
+            "description" : "",
+            "price" :1.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Gravy",
+            "description" : "",
+            "price" : 0.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Chips",
+            "description" : "",
+            "price" : 2.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Cheesy Chips",
+            "description" : "",
+            "price" : 3.25,
+            "vegetarian" : true
+           },
+           {
+            "name": "Sweet Potato Fries",
+            "description" : "",
+            "price" : 3.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Cheesy Sweet Potato Fries",
+            "description" : "",
+            "price" : 4.25,
+            "vegetarian" : true
+           },
+           {
+            "name": "Halloumi Fries",
+            "description" : "",
+            "price" : 3.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Onion Rings",
+            "description" : "",
+            "price" : 2.75,
+            "vegetarian" : true
+           },
+           {
+            "name": "Garlic Bread (flatbread)",
+            "description" : "",
+            "price" : 2.25,
+            "vegetarian" : true
+           },
+           {
+            "name": "Cheesy Garlic Bread (flatbread)",
+            "description" : "",
+            "price" : 2.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Side Salad",
+            "description" : "",
+            "price" : 2.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Cauli Cheese",
+            "description" : "",
+            "price" : 1.75,
+            "vegetarian" : true
+           }
+        ]
+      }, {
+        "name" : "Desserts",
+        "items" : [
+          {
+           "name": "Chocolate Fudge Cake",
+           "description" : "",
+           "price" : 3.50,
+           "vegetarian" : false
+          },
+          {
+            "name": "Vegan Chocolate Chip Orange Pudding",
+            "description" : "",
+            "price" : 3.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Raspberry Sparkle Mess Cheesecake",
+            "description" : "",
+            "price" : 3.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Apple Crumble",
+            "description" : "",
+            "price" : 3.50,
+            "vegetarian" : true
+           },
+           {
+            "name": "Cookie Dough Brownie",
+            "description" : "",
+            "price" : 3.50,
+            "vegetarian" : true
+           }
+        ]
+      }
+    ]
+  }
+]

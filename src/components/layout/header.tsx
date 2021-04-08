@@ -64,7 +64,8 @@ const Header = ({ toggle, toggleContact} : Props) => {
             <ul>
               <li><Link activeClassName="link-active" to="/">Home</Link></li>
               <li><Link activeClassName="link-active" to="/gallery">Gallery</Link></li>
-              <li>
+              <li><Link activeClassName="link-active" to="/menus">Menus</Link></li>
+              {/* <li>
                 <button onClick={() => dropDownMenuSelection()}>Menus</button>
           
               { menusDown === true && 
@@ -101,7 +102,7 @@ const Header = ({ toggle, toggleContact} : Props) => {
                       </Link></li>
                   </ul>
                 </div>
-                }</li>
+                }</li> */}
               <li className="contact-link">
                 <button onClick={() => toggleContactContainer()}>
                   <span className="btn-bg"></span>

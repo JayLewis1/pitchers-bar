@@ -69,6 +69,19 @@
     text-transform: uppercase;
     margin-bottom: 30px;
   }
+  .section-selector {
+    width: 80%;
+    height: 45px;
+    border: 2px $purple solid;
+    border-radius: 2px;
+    outline: none;
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+  }
   .menu-section {
     width: 100%;
     margin-top: 20px;

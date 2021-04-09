@@ -18,7 +18,7 @@
       }
       .booking-info-p {
         font-size: 1.2rem;
-        line-height: 22px;;
+        line-height: 22px;
       }
       p {
         font-size: 1rem;
@@ -55,87 +55,91 @@
         }
       }
     }
-    .form-wrapper {
-      padding-top: 100px;
-      .sub-heading {
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 25px;
-      }
-      form {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        .input-wrapper {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 15px;
+  }
+}
+.form-wrapper {
+  padding-top: 100px;
+  .sub-heading {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
 
-          label {
-            font-size: 1rem;
-            font-weight: 400;
-            color: $textMed;
-            margin-bottom: 7px;
-            margin-left: 5px;
-          }
-          input,
-          textarea {
-            width: 100%;
-            background: none;
-            border: 1px $white solid;
-            border-radius: 2px;
-            outline: none;
-            padding: 8px 5px;
-            font-family: $font;
-            font-size: 1.1rem;
-            color: $white;
-          }
-          textarea {
-            height: 150px;
-            resize: none;
-          }
-          input::placeholder {
-            color: $textMed;
-            opacity: 0.6;
-          }
-          textarea::placeholder {
-            color: $textMed;
-            opacity: 0.6;
-          }
-        }
-        #submit-btn {
-          outline: none;
-          border: none;
-          background-color: $purple;
-          width: 180px;
-          margin-top: 15px;
-          margin-left: auto;
-          text-align: center;
-          text-decoration: none;
-          border-radius: 2px;
-          position: relative;
-          overflow: hidden;
-          font-family: $font;
-          cursor: pointer;
-          p {
-            position: relative;
-            color: $white;
-            font-size: 1rem;
-            font-weight: 400;
-            margin: 10px 0;
-            z-index: 2;
-          }
-        }
-        #submit-btn:hover {
-          p {
-            color: $purple;
-            font-weight: 500;
-          }
-          .btn-bg {
-            min-width: 100%;
-          }
-        }
+      label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $textMed;
+        margin-bottom: 7px;
+        margin-left: 10px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        background: none;
+        border: 1px $white solid;
+        border-radius: 2px;
+        outline: none;
+        padding: 8px 5px;
+        font-family: $font;
+        font-size: 1.1rem;
+        color: $white;
+        background-color: rgb(30, 30, 30);
+        border: none;
+        border-radius: 5px;
+        padding: 15px 10px;
+      }
+      textarea {
+        height: 150px;
+        resize: none;
+      }
+      input::placeholder {
+        color: $textMed;
+        opacity: 0.6;
+      }
+      textarea::placeholder {
+        color: $textMed;
+        opacity: 0.6;
+      }
+    }
+    #submit-btn {
+      outline: none;
+      border: none;
+      background-color: $purple;
+      width: 180px;
+      margin-top: 15px;
+      margin-left: auto;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      font-family: $font;
+      cursor: pointer;
+      p {
+        position: relative;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 10px 0;
+        z-index: 2;
+      }
+    }
+    #submit-btn:hover {
+      p {
+        color: $purple;
+        font-weight: 500;
+      }
+      .btn-bg {
+        min-width: 100%;
       }
     }
   }

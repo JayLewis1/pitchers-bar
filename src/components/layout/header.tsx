@@ -104,9 +104,10 @@ const Header = ({ toggle, toggleContact} : Props) => {
                 </div>
                 }</li> */}
               <li className="contact-link">
-                <button onClick={() => toggleContactContainer()}>
+                <Link to="/contact">
                   <span className="btn-bg"></span>
-                  <p>Contact</p></button>
+                  <p>Contact</p>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -129,7 +130,7 @@ const Header = ({ toggle, toggleContact} : Props) => {
               <li><Link activeClassName="link-active" to="/">Home</Link></li>
               <li><Link activeClassName="link-active" to="/gallery">Gallery</Link></li>
               <li><Link activeClassName="link-active" to="/menus">Menus</Link></li>
-              <li><Link activeClassName="link-active" to="/contact">Contact</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
         </div>   

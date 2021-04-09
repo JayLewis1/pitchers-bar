@@ -343,7 +343,8 @@ body .App {
   margin: 10px 0;
 }
 
-.header .wrapper .responsive-menu ul li a {
+.header .wrapper .responsive-menu ul li a,
+.header .wrapper .responsive-menu ul li button {
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -1045,17 +1046,17 @@ body .App {
   word-break: break-all;
 }
 
-.booking-container .wrapper .form-wrapper {
+.form-wrapper {
   padding-top: 100px;
 }
 
-.booking-container .wrapper .form-wrapper .sub-heading {
+.form-wrapper .sub-heading {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 25px;
 }
 
-.booking-container .wrapper .form-wrapper form {
+.form-wrapper form {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,7 +1068,7 @@ body .App {
   margin: 0 auto;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper {
+.form-wrapper form .input-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,16 +1079,16 @@ body .App {
   margin-bottom: 15px;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper label {
+.form-wrapper form .input-wrapper label {
   font-size: 1rem;
   font-weight: 400;
   color: #b4b5b3;
   margin-bottom: 7px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper input,
-.booking-container .wrapper .form-wrapper form .input-wrapper textarea {
+.form-wrapper form .input-wrapper input,
+.form-wrapper form .input-wrapper textarea {
   width: 100%;
   background: none;
   border: 1px #fcfcfc solid;
@@ -1097,54 +1098,58 @@ body .App {
   font-family: "Work Sans", sans-serif;
   font-size: 1.1rem;
   color: #fcfcfc;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 10px;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper textarea {
+.form-wrapper form .input-wrapper textarea {
   height: 150px;
   resize: none;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper input::-webkit-input-placeholder {
+.form-wrapper form .input-wrapper input::-webkit-input-placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper input:-ms-input-placeholder {
+.form-wrapper form .input-wrapper input:-ms-input-placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper input::-ms-input-placeholder {
+.form-wrapper form .input-wrapper input::-ms-input-placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper input::placeholder {
+.form-wrapper form .input-wrapper input::placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper textarea::-webkit-input-placeholder {
+.form-wrapper form .input-wrapper textarea::-webkit-input-placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper textarea:-ms-input-placeholder {
+.form-wrapper form .input-wrapper textarea:-ms-input-placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper textarea::-ms-input-placeholder {
+.form-wrapper form .input-wrapper textarea::-ms-input-placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form .input-wrapper textarea::placeholder {
+.form-wrapper form .input-wrapper textarea::placeholder {
   color: #b4b5b3;
   opacity: 0.6;
 }
 
-.booking-container .wrapper .form-wrapper form #submit-btn {
+.form-wrapper form #submit-btn {
   outline: none;
   border: none;
   background-color: #912070;
@@ -1160,7 +1165,7 @@ body .App {
   cursor: pointer;
 }
 
-.booking-container .wrapper .form-wrapper form #submit-btn p {
+.form-wrapper form #submit-btn p {
   position: relative;
   color: #fcfcfc;
   font-size: 1rem;
@@ -1169,12 +1174,12 @@ body .App {
   z-index: 2;
 }
 
-.booking-container .wrapper .form-wrapper form #submit-btn:hover p {
+.form-wrapper form #submit-btn:hover p {
   color: #912070;
   font-weight: 500;
 }
 
-.booking-container .wrapper .form-wrapper form #submit-btn:hover .btn-bg {
+.form-wrapper form #submit-btn:hover .btn-bg {
   min-width: 100%;
 }
 
@@ -2319,18 +2324,7 @@ body .App {
 }
 
 .contact-container {
-  width: 500px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #fcfcfc;
-  z-index: 50;
-  border-radius: 3px;
-  -webkit-box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.18);
-          box-shadow: 3px 6px 30px rgba(0, 0, 0, 0.18);
-  padding: 25px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2338,155 +2332,41 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #0f110d;
+  padding-top: 70px;
 }
 
 .contact-container h3 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.contact-container p {
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 0 30px;
-}
-
-.contact-container form {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-.contact-container form .input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.contact-container form .input-wrapper label {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 5px;
-  color: #16161a;
-  padding-left: 10px;
-}
-
-.contact-container form .input-wrapper input,
-.contact-container form .input-wrapper textarea {
-  background-color: none;
-  border: none;
-  outline: none;
-  background: none;
-  border-radius: 0;
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #16161a;
-  padding: 10px;
-  border-bottom: #ebebeb 2px solid;
-}
-
-.contact-container form .input-wrapper textarea {
-  height: 100px;
-  resize: none;
-}
-
-.contact-container form .input-wrapper input:focus {
-  border-bottom: #912070 2px solid;
-}
-
-.contact-container form .input-wrapper input::-webkit-input-placeholder,
-.contact-container form .input-wrapper textarea::-webkit-input-placeholder {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #b4b5b3;
-}
-
-.contact-container form .input-wrapper input:-ms-input-placeholder,
-.contact-container form .input-wrapper textarea:-ms-input-placeholder {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #b4b5b3;
-}
-
-.contact-container form .input-wrapper input::-ms-input-placeholder,
-.contact-container form .input-wrapper textarea::-ms-input-placeholder {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #b4b5b3;
-}
-
-.contact-container form .input-wrapper input::placeholder,
-.contact-container form .input-wrapper textarea::placeholder {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #b4b5b3;
-}
-
-.contact-container form .btn-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.contact-container form input[type="submit"] {
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  padding: 5px 10px;
-  background-color: #912070;
-  font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: capitalize;
+  font-size: 2.2rem;
   color: #fcfcfc;
-  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px auto;
+  margin-bottom: 10px;
+}
+
+.contact-container .form-wrapper {
+  width: 450px;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+.contact-container .form-wrapper form {
+  width: 100%;
+}
+
+.contact-container .form-wrapper form .input-wrapper {
+  margin-bottom: 20px;
+}
+
+.contact-container .form-wrapper .btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 45%;
-  height: 40px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  margin: 0 auto;
 }
 
-.contact-container form input[type="submit"]:hover {
-  -webkit-box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
-          box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
-}
-
-.contact-container form input[type="submit"]:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.contact-container .cancel-btn {
+.contact-container .form-wrapper .details-btn {
   background: none;
   border: none;
   outline: none;
@@ -2496,21 +2376,60 @@ body .App {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 45%;
   height: 40px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #16161a;
+  margin-top: 15px;
   cursor: pointer;
-  border-radius: 2px;
-  margin: 0 auto;
 }
 
-.contact-container .cancel-btn:hover {
-  color: #912070;
+.contact-container .form-wrapper .details-btn p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  color: #fcfcfc;
+  font-weight: 500;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+@media (max-width: 450px) {
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container .form-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contact-container .form-wrapper form {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .contact-container .form-wrapper form .btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-container .form-wrapper form .btn-wrapper button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-container .form-wrapper form .btn-wrapper #submit-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // Redux
 import { connect, ConnectedProps } from "react-redux";
 
@@ -21,11 +21,19 @@ type PropsFromRedux = ConnectedProps<typeof connector>;
 type Props = PropsFromRedux 
 
  const Contact = ({toggleContact}:Props) => {
-
+  const [toggleDetails, setToToggleDetails] = useState(false)
   // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   //   e.preventDefault();
   //   console.log("submit")
   // }
+  const toggleContactDetails = () => {
+    if(toggleDetails) {
+      setToToggleDetails(false)
+    } else {
+      setToToggleDetails(true)
+    }
+  }
+
   return (
     <div className="contact-container"> 
       <h3>Contact us</h3>

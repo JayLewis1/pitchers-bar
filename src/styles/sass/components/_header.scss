@@ -66,12 +66,12 @@
             left: 50%;
             transform: translate(-50%, 0);
             z-index: 50;
-        
+
             .menu-triangle {
               width: 20px;
               height: 20px;
               position: absolute;
-        
+
               border-bottom: 10px solid $white;
               border-top: 10px solid transparent;
               border-left: 10px solid transparent;
@@ -105,12 +105,12 @@
                       font-size: 1.1rem;
                       font-weight: 500;
                       margin-bottom: 5px;
-                      color: $text
+                      color: $text;
                     }
                     p {
                       font-size: 0.9rem;
                       font-weight: 300;
-                      color: $text
+                      color: $text;
                     }
                   }
                 }
@@ -121,10 +121,10 @@
               li:hover {
                 background-color: $white;
                 a {
-                  h2 ,
-                   p {
-                     color: $purple;
-                   }
+                  h2,
+                  p {
+                    color: $purple;
+                  }
                 }
               }
             }
@@ -194,7 +194,8 @@
         li {
           width: 100%;
           margin: 10px 0;
-          a {
+          a,
+          button {
             font-size: 1.2rem;
             font-weight: 400;
             letter-spacing: 0.2px;
@@ -218,12 +219,12 @@
   }
 }
 
-@media(min-width: 621px) {
+@media (min-width: 621px) {
   .header {
     .wrapper {
       .responsive-menu {
-       display: none;
-      }  
+        display: none;
+      }
     }
   }
 }

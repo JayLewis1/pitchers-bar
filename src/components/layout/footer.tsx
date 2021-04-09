@@ -16,13 +16,6 @@ const Footer = () => {
               <li><Link activeClassName="footer-active-link" to="/contact">contact</Link></li>
             </ul>
           </div>
-          <div className="list-wrapper">
-            <p className="heading">Menus</p>
-            <ul>
-              <li><Link activeClassName="footer-active-link" to="/menus/drinks">Drinks</Link></li>
-              <li><Link activeClassName="footer-active-link" to="/menus/food">Food</Link></li>
-            </ul>
-          </div>
           <div className="list-wrapper" id="contact-list">
             <p className="heading">Contact</p>
             <ul>

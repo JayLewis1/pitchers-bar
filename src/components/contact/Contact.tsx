@@ -22,22 +22,22 @@ type Props = PropsFromRedux
 
  const Contact = ({toggleContact}:Props) => {
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("submit")
-  }
+  // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log("submit")
+  // }
   return (
     <div className="contact-container"> 
       <h3>Contact us</h3>
       <p>Use the form below or reach us on any of our contact information to ask any questions or want to make a booking.</p>
-      <form onSubmit={(e) => onSubmit(e)}>
+      <form method="post" action="https://formspree.io/f/xbjqjppp">
         <span className="input-wrapper">
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name"/>
         </span>
         <span className="input-wrapper">
           <label htmlFor="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email"/>
+          <input type="text" id="email" name="_replyto" placeholder="Enter your email"/>
         </span>
         <span className="input-wrapper">
           <label htmlFor="details">Details or question</label>

@@ -1880,7 +1880,7 @@ body .App {
   height: 45px;
   border: none;
   background-color: #0f110d;
-  border-radius: 2px;
+  border-radius: 5px;
   outline: none;
   color: #fcfcfc;
   font-family: "Work Sans", sans-serif;
@@ -1889,11 +1889,41 @@ body .App {
   margin: 30px auto;
   text-align: center;
   cursor: pointer;
-  padding: 5px 25px;
+  text-align-last: center;
 }
 
 .menu-wrapper .menu-section {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-wrapper .menu-section .price-titles {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-wrapper .menu-section .price-titles p {
+  margin-left: 15px;
+  min-width: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.menu-wrapper .menu-section #draught-price p {
+  margin-left: 35px;
+}
+
+.menu-wrapper .menu-section #wine-price p {
+  margin-left: 20px;
 }
 
 .menu-wrapper .menu-section .section-name {
@@ -1905,7 +1935,7 @@ body .App {
 
 .menu-wrapper .menu-section .menu-item {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .menu-wrapper .menu-section .menu-item .name-wrapper {
@@ -1924,7 +1954,7 @@ body .App {
 .menu-wrapper .menu-section .menu-item .name-wrapper .price {
   margin-left: auto;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .menu-wrapper .menu-section .menu-item .name-wrapper .veggie {
@@ -1932,6 +1962,17 @@ body .App {
   font-size: 1rem;
   font-weight: 600;
   color: #84c638;
+}
+
+.menu-wrapper .menu-section .menu-item .name-wrapper .price-by-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.menu-wrapper .menu-section .menu-item .name-wrapper .price-by-size p {
+  margin-left: 25px;
 }
 
 .menu-wrapper .menu-section .menu-item .description {
@@ -2366,32 +2407,45 @@ body .App {
   border-bottom: #912070 2px solid;
 }
 
-.contact-container form .input-wrapper input::-webkit-input-placeholder, .contact-container form .input-wrapper textarea::-webkit-input-placeholder {
+.contact-container form .input-wrapper input::-webkit-input-placeholder,
+.contact-container form .input-wrapper textarea::-webkit-input-placeholder {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   color: #b4b5b3;
 }
 
-.contact-container form .input-wrapper input:-ms-input-placeholder, .contact-container form .input-wrapper textarea:-ms-input-placeholder {
+.contact-container form .input-wrapper input:-ms-input-placeholder,
+.contact-container form .input-wrapper textarea:-ms-input-placeholder {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   color: #b4b5b3;
 }
 
-.contact-container form .input-wrapper input::-ms-input-placeholder, .contact-container form .input-wrapper textarea::-ms-input-placeholder {
+.contact-container form .input-wrapper input::-ms-input-placeholder,
+.contact-container form .input-wrapper textarea::-ms-input-placeholder {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   color: #b4b5b3;
 }
 
-.contact-container form .input-wrapper input::placeholder, .contact-container form .input-wrapper textarea::placeholder {
+.contact-container form .input-wrapper input::placeholder,
+.contact-container form .input-wrapper textarea::placeholder {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   color: #b4b5b3;
+}
+
+.contact-container form .btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .contact-container form input[type="submit"] {
@@ -2406,7 +2460,6 @@ body .App {
   text-transform: capitalize;
   color: #fcfcfc;
   cursor: pointer;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2416,10 +2469,11 @@ body .App {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: 45%;
   height: 40px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  margin: 0 auto;
 }
 
 .contact-container form input[type="submit"]:hover {
@@ -2436,7 +2490,6 @@ body .App {
   background: none;
   border: none;
   outline: none;
-  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2446,25 +2499,18 @@ body .App {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
+  width: 45%;
   height: 40px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   font-size: 1rem;
   font-weight: 600;
   color: #16161a;
   cursor: pointer;
   border-radius: 2px;
+  margin: 0 auto;
 }
 
 .contact-container .cancel-btn:hover {
-  -webkit-box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
-          box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
-}
-
-.contact-container .cancel-btn:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  color: #912070;
 }
 
 .footer {

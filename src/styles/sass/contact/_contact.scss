@@ -22,7 +22,7 @@
   p {
     font-size: 1rem;
     font-weight: 400;
-    padding: 0 30px
+    padding: 0 30px;
   }
   form {
     width: 90%;
@@ -62,12 +62,19 @@
       input:focus {
         border-bottom: $purple 2px solid;
       }
-      input::placeholder, textarea::placeholder{
+      input::placeholder,
+      textarea::placeholder {
         font-family: $font;
         font-size: 1.2rem;
         font-weight: 400;
         color: $textMed;
       }
+    }
+    .btn-container {
+      width: 100%;
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 15px;
     }
     input[type="submit"] {
       border: none;
@@ -81,42 +88,40 @@
       text-transform: capitalize;
       color: $white;
       cursor: pointer;
-      margin-top: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 45%;
       height: 40px;
       transition: 0.2s;
+      margin: 0 auto;
     }
     input[type="submit"]:hover {
       box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
     }
     input[type="submit"]:active {
-      transform : scale(0.9);
+      transform: scale(0.9);
     }
   }
   .cancel-btn {
-    background:none;
+    background: none;
     border: none;
     outline: none;
-    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 45%;
     height: 40px;
-    transition: 0.2s;
+    // transition: 0.2s;
     font-size: 1rem;
     font-weight: 600;
     color: $text;
     cursor: pointer;
     border-radius: 2px;
+    margin: 0 auto;
   }
   .cancel-btn:hover {
-    box-shadow: 0px 0px 40px rgba(145, 32, 112, 0.18);
-  }
-  .cancel-btn:active {
-    transform : scale(0.9);
+    // border: 2px $purple solid;
+    color: $purple;
   }
 }

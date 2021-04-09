@@ -84,7 +84,7 @@
     height: 45px;
     border: none;
     background-color: $bg;
-    border-radius: 2px;
+    border-radius: 5px;
     outline: none;
     color: $white;
     font-family: $font;
@@ -93,11 +93,36 @@
     margin: 30px auto;
     text-align: center;
     cursor: pointer;
-    padding: 5px 25px;
+    // padding: 5px 25px;
+    text-align-last: center;
   }
+
   .menu-section {
     width: 100%;
     // margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    .price-titles {
+      margin-left: auto;
+      display: flex;
+      p {
+        margin-left: 15px;
+        min-width: 30px;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+    #draught-price {
+      p {
+        margin-left: 35px;
+      }
+    }
+    #wine-price {
+      p {
+        margin-left: 20px;
+      }
+    }
     .section-name {
       margin: 0 auto;
       margin-bottom: 25px;
@@ -106,7 +131,7 @@
     }
     .menu-item {
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
       .name-wrapper {
         display: flex;
         margin: 15px 0;
@@ -118,13 +143,20 @@
         .price {
           margin-left: auto;
           font-size: 1rem;
-          font-weight: 600;
+          font-weight: 500;
         }
         .veggie {
           margin-left: 15px;
           font-size: 1rem;
           font-weight: 600;
           color: $green;
+        }
+        .price-by-size {
+          display: flex;
+          margin-left: auto;
+          p {
+            margin-left: 25px;
+          }
         }
       }
       .description {

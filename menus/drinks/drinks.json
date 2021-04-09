@@ -149,18 +149,18 @@
            "description" : "",
            "price" : 0,
            "size" : {
-              "half" : 1.70,
-              "pint" : 3.30,
-              "jug" : 12.00
+              "small" : 1.70,
+              "medium" : 3.30,
+              "large" : 12.00
            }
           },{
             "name": "Coors",
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.80,
-               "pint" : 3.40,
-               "jug" : 13.00
+               "small" : 1.80,
+               "medium" : 3.40,
+               "large" : 13.00
             }
            },
            {
@@ -168,9 +168,9 @@
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.90,
-               "pint" : 3.80,
-               "jug" : 14.00
+               "small" : 1.90,
+               "medium" : 3.80,
+               "large" : 14.00
             }
            },
            {
@@ -178,9 +178,9 @@
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.90,
-               "pint" : 3.80,
-               "jug" : 14.00
+               "small" : 1.90,
+               "medium" : 3.80,
+               "large" : 14.00
             }
            },
            {
@@ -188,9 +188,9 @@
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.70,
-               "pint" : 3.30,
-               "jug" : 12.00
+               "small" : 1.70,
+               "medium" : 3.30,
+               "large" : 12.00
             }
            }
            ,
@@ -199,9 +199,9 @@
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.80,
-               "pint" : 3.40,
-               "jug" : 13.00
+               "small" : 1.80,
+               "medium" : 3.40,
+               "large" : 13.00
             }
            },
            {
@@ -209,27 +209,27 @@
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.80,
-               "pint" : 3.50,
-               "jug" : 14.00
+               "small" : 1.80,
+               "medium" : 3.50,
+               "large" : 14.00
             }
            },   {
             "name": "Guiness",
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 2.00,
-               "pint" : 4.00,
-               "jug" : 15.00
+               "small" : 2.00,
+               "medium" : 4.00,
+               "large" : 15.00
             }
            } ,  {
             "name": "Citra IPA",
             "description" : "",
             "price" : 0,
             "size" : {
-               "half" : 1.80,
-               "pint" : 3.90,
-               "jug" : 14.00
+               "small" : 1.80,
+               "medium" : 3.90,
+               "large" : 14.00
             }
            }
         ]
@@ -242,8 +242,8 @@
            "description" : "",
            "price" : 0,
            "size" : {
-              "single" :3.00,
-              "bucket (4)" : 10.00
+              "small" :3.00,
+              "medium" : 10.00
            }
         },
         {
@@ -251,8 +251,8 @@
           "description" : "",
           "price" : 0,
           "size" : {
-             "single" :3.00,
-             "bucket (4)" : 10.00
+             "small" :3.00,
+             "medium" : 10.00
           }
        },
        {
@@ -260,16 +260,16 @@
         "description" : "",
         "price" : 0,
         "size" : {
-           "single" :3.10,
-           "bucket (4)" : 10.00
+           "small" :3.10,
+           "medium" : 10.00
         }
      },       {
       "name": "Export",
       "description" : "",
       "price" : 0,
       "size" : {
-         "single" :3.00,
-         "bucket (4)" : 0
+         "small" :3.00,
+         "medium" : 0
       }
    },
    {
@@ -277,8 +277,8 @@
     "description" : "",
     "price" : 0,
     "size" : {
-       "single" :4.00,
-       "bucket (4)" : 0.00
+       "small" :4.00,
+       "medium" : 0.00
     }
  },
  {
@@ -286,16 +286,16 @@
   "description" : "",
   "price" : 0,
   "size" : {
-     "single" :4.00,
-     "bucket (4)" : 0.00
+     "small" :4.00,
+     "medium" : 0.00
   }
 },{
   "name": "Becks Blue (Non Alchoholic)",
   "description" : "",
   "price" : 0,
   "size" : {
-     "single" :2.90,
-     "bucket (4)" : 0.00
+     "small" :2.90,
+     "medium" : 0.00
   }
 },
 {
@@ -303,8 +303,8 @@
   "description" : "",
   "price" : 0,
   "size" : {
-     "single" :1.50,
-     "bucket (4)" : 0.00
+     "small" :1.50,
+     "medium" : 0.00
   }
 }
       ]
@@ -317,9 +317,9 @@
        "description" : "",
        "price" : 0,
        "size" : {
-        "175ml" :3.70,
-        "250ml" : 4.70,
-        "Bottle" : 13.50
+        "small" :3.70,
+        "medium" : 4.70,
+        "large" : 13.50
      }
       },
       {
@@ -327,9 +327,9 @@
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :3.95,
-         "250ml" : 4.95,
-         "Bottle" : 14.00
+         "small" :3.95,
+         "medium" : 4.95,
+         "large" : 14.00
       }
        },
        {
@@ -337,54 +337,54 @@
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :3.50,
-         "250ml" : 4.50,
-         "Bottle" : 13.00
+         "small" :3.50,
+         "medium" : 4.50,
+         "large" : 13.00
       }
        }, {
         "name": "White Zinfendal",
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :3.50,
-         "250ml" : 4.50,
-         "Bottle" : 13.00
+         "small" :3.50,
+         "medium" : 4.50,
+         "large" : 13.00
       }
        }, {
         "name": "Merlot",
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :3.95,
-         "250ml" : 4.95,
-         "Bottle" : 14.00
+         "small" :3.95,
+         "medium" : 4.95,
+         "large" : 14.00
       }
        }, {
         "name": "Prosecco",
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :0,
-         "250ml" : 0,
-         "Bottle" : 15.00
+         "small" :0,
+         "medium" : 0,
+         "large" : 15.00
       }
        }, {
-        "name": "Prosecco Single Serve",
+        "name": "Prosecco small Serve",
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :0,
-         "250ml" : 0,
-         "Bottle" : 4.50
+         "small" :0,
+         "medium" : 0,
+         "large" : 4.50
       }
        }, {
         "name": "Champagne",
         "description" : "",
         "price" : 0,
         "size" : {
-         "175ml" :0,
-         "250ml" : 0,
-         "Bottle" : 40.00
+         "small" :0,
+         "medium" : 0,
+         "large" : 40.00
       }
        }
     ]
@@ -397,8 +397,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :3.20,
-         "Double" : 4.20
+         "small" :3.20,
+         "medium" : 4.20
       }
    },
    {
@@ -406,8 +406,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :3.30,
-         "Double" : 4.30
+         "small" :3.30,
+         "medium" : 4.30
       }
    },
    {
@@ -415,16 +415,16 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :3.30,
-         "Double" : 4.30
+         "small" :3.30,
+         "medium" : 4.30
       }
    }, {
       "name": "Smirnoff & Energy",
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :4.00,
-         "Double" : 5.00
+         "small" :4.00,
+         "medium" : 5.00
       }
    },
    {
@@ -432,16 +432,16 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :2.50,
-         "Double" : 0
+         "small" :2.50,
+         "medium" : 0
       }
    }, {
       "name": "Ciroc Original",
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :4.10,
-         "Double" : 5.10
+         "small" :4.10,
+         "medium" : 5.10
       }
    },
    {
@@ -449,8 +449,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :4.10,
-         "Double" : 5.10
+         "small" :4.10,
+         "medium" : 5.10
       }
    },
    {
@@ -458,8 +458,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :4.10,
-         "Double" : 5.10
+         "small" :4.10,
+         "medium" : 5.10
       }
    },
    {
@@ -467,8 +467,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-         "Single" :4.10,
-         "Double" : 5.10
+         "small" :4.10,
+         "medium" : 5.10
       }
    }
 ]
@@ -480,8 +480,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -489,8 +489,8 @@
        "description" : "",
        "price" : 0,
        "size" : {
-        "Single" :4.00,
-        "Double" : 5.00
+        "small" :4.00,
+        "medium" : 5.00
      }
       }
    ]
@@ -502,8 +502,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -511,8 +511,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -520,8 +520,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.60,
-       "Double" : 4.60
+       "small" :3.60,
+       "medium" : 4.60
     }
      },
      {
@@ -529,8 +529,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.60,
-       "Double" :4.60
+       "small" :3.60,
+       "medium" :4.60
     }
      },
      {
@@ -538,8 +538,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.60,
-       "Double" : 4.60
+       "small" :3.60,
+       "medium" : 4.60
     }
      },
      {
@@ -547,8 +547,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.10,
-       "Double" : 5.10
+       "small" :4.10,
+       "medium" : 5.10
     }
      },
      {
@@ -556,8 +556,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -565,8 +565,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.50,
-       "Double" : 4.50
+       "small" :3.50,
+       "medium" : 4.50
     }
      },
      {
@@ -574,8 +574,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.50,
-       "Double" : 4.50
+       "small" :3.50,
+       "medium" : 4.50
     }
      },
      {
@@ -583,8 +583,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -592,8 +592,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.10,
-       "Double" : 5.10
+       "small" :4.10,
+       "medium" : 5.10
     }
      },
      {
@@ -601,8 +601,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -610,8 +610,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -619,8 +619,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -628,8 +628,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -637,8 +637,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -646,8 +646,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -655,8 +655,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -664,8 +664,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.15,
-       "Double" : 5.15
+       "small" :4.15,
+       "medium" : 5.15
     }
      },
      {
@@ -673,16 +673,16 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.10,
-       "Double" : 5.10
+       "small" :4.10,
+       "medium" : 5.10
     }
      },    {
       "name": "Sipsmith Original",
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.90,
-       "Double" : 4.90
+       "small" :3.90,
+       "medium" : 4.90
     }
      },
      {
@@ -690,8 +690,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.00,
-       "Double" : 4.00
+       "small" :3.00,
+       "medium" : 4.00
     }
      }
    ]
@@ -703,8 +703,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.20,
-       "Double" : 5.20
+       "small" :4.20,
+       "medium" : 5.20
     }
      },
      {
@@ -712,8 +712,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.10,
-       "Double" : 5.10
+       "small" :4.10,
+       "medium" : 5.10
     }
      },
      {
@@ -721,8 +721,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -730,16 +730,16 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },{
       "name": "Makers Mark",
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -747,8 +747,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.90,
-       "Double" : 4.90
+       "small" :3.90,
+       "medium" : 4.90
     }
      },
      {
@@ -756,16 +756,16 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.90,
-       "Double" : 4.90
+       "small" :3.90,
+       "medium" : 4.90
     }
      },{
       "name": "JD Fire",
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.90,
-       "Double" : 4.90
+       "small" :3.90,
+       "medium" : 4.90
     }
      },
      {
@@ -773,8 +773,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.90,
-       "Double" : 4.90
+       "small" :3.90,
+       "medium" : 4.90
     }
      },
      {
@@ -782,8 +782,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.50,
-       "Double" : 5.50
+       "small" :4.50,
+       "medium" : 5.50
     }
      },
      {
@@ -791,8 +791,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.10,
-       "Double" : 5.10
+       "small" :4.10,
+       "medium" : 5.10
     }
      },
      {
@@ -800,8 +800,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -809,8 +809,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :2.50,
-       "Double" : 0
+       "small" :2.50,
+       "medium" : 0
     }
      }
    ]
@@ -822,8 +822,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -831,8 +831,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -840,8 +840,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :4.00,
-       "Double" : 5.00
+       "small" :4.00,
+       "medium" : 5.00
     }
      },
      {
@@ -849,8 +849,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" : 3.40,
-       "Double" : 4.40
+       "small" : 3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -858,8 +858,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -867,8 +867,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -876,8 +876,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -885,8 +885,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -894,8 +894,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -903,8 +903,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -912,8 +912,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -921,8 +921,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -930,8 +930,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -939,8 +939,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -948,8 +948,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -957,8 +957,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -966,8 +966,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -975,8 +975,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -984,8 +984,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -993,8 +993,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -1002,8 +1002,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      },
      {
@@ -1011,8 +1011,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.40,
-       "Double" : 4.40
+       "small" :3.40,
+       "medium" : 4.40
     }
      }
    ]
@@ -1024,8 +1024,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.00,
-       "Double" : 4.00
+       "small" :3.00,
+       "medium" : 4.00
     }
      },
      {
@@ -1033,8 +1033,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.00,
-       "Double" : 4.00
+       "small" :3.00,
+       "medium" : 4.00
     }
      },
      {
@@ -1042,8 +1042,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.20,
-       "Double" : 4.20
+       "small" :3.20,
+       "medium" : 4.20
     }
      },
      {
@@ -1051,8 +1051,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.20,
-       "Double" : 4.20
+       "small" :3.20,
+       "medium" : 4.20
     }
      },
      {
@@ -1060,8 +1060,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.80,
-       "Double" : 4.80
+       "small" :3.80,
+       "medium" : 4.80
     }
      },
      {
@@ -1069,8 +1069,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :3.00,
-       "Double" : 4.00
+       "small" :3.00,
+       "medium" : 4.00
     }
      },
      {
@@ -1078,8 +1078,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :0,
-       "Double" : 4.00
+       "small" :0,
+       "medium" : 4.00
     }
      },
      {
@@ -1087,8 +1087,8 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Single" :0,
-       "Double" : 4.00
+       "small" :0,
+       "medium" : 4.00
     }
      }
    ]
@@ -1100,9 +1100,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "small" : 1.80,
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1110,9 +1110,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "small" : 1.80,
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1120,9 +1120,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "small" : 1.80,
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1130,9 +1130,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 0,
-       "Standard" : 2.20,
-       "Pint" : 0
+       "small" : 0,
+       "medium" : 2.20,
+       "large" : 0
     }
      },
      {
@@ -1140,9 +1140,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.30,
-       "Standard" : 1.50,
-       "Pint" : 1.80
+       "small" : 1.30,
+       "medium" : 1.50,
+       "large" : 1.80
     }
      },
      {
@@ -1150,9 +1150,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 0.60,
-       "Standard" : 0.80,
-       "Pint" : 1.00
+       "small" : 0.60,
+       "medium" : 0.80,
+       "large" : 1.00
     }
      },
      {
@@ -1160,9 +1160,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 2.20,
-       "Standard" : 2.20,
-       "Pint" : 2.50
+       "small" : 2.20,
+       "medium" : 2.20,
+       "large" : 2.50
     }
      },
      {
@@ -1170,9 +1170,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 2.20,
-       "Standard" : 2.20,
-       "Pint" : 2.50
+       "small" : 2.20,
+       "medium" : 2.20,
+       "large" : 2.50
     }
      },
      {
@@ -1180,9 +1180,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 2.20,
-       "Standard" : 2.20,
-       "Pint" : 2.50
+       "small" : 2.20,
+       "medium" : 2.20,
+       "large" : 2.50
     }
      },
      {
@@ -1190,9 +1190,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 0,
-       "Standard" : 1.0,
-       "Pint" : 0
+       "small" : 0,
+       "medium" : 1.0,
+       "large" : 0
     }
      },
      {
@@ -1200,9 +1200,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "small" : 1.80,
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1210,9 +1210,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "small" : 1.80,
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1220,9 +1220,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "small" : 1.80,
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1231,8 +1231,8 @@
       "price" : 0,
       "size" : {
        "Half" : 1.80,
-       "Standard" : 2.10,
-       "Pint" : 2.50
+       "medium" : 2.10,
+       "large" : 2.50
     }
      },
      {
@@ -1241,8 +1241,8 @@
       "price" : 0,
       "size" : {
        "Half" : 0,
-       "Standard" : 1.50,
-       "Pint" :0
+       "medium" : 1.50,
+       "large" :0
     }
      },
      {
@@ -1251,8 +1251,8 @@
       "price" : 0,
       "size" : {
        "Half" : 0,
-       "Standard" : 1.50,
-       "Pint" :0
+       "medium" : 1.50,
+       "large" :0
     }
      },
      {
@@ -1261,8 +1261,8 @@
       "price" : 0,
       "size" : {
        "Half" : 0,
-       "Standard" : 1.50,
-       "Pint" :0
+       "medium" : 1.50,
+       "large" :0
     }
      },
      {
@@ -1271,8 +1271,8 @@
       "price" : 0,
       "size" : {
        "Half" : 0,
-       "Standard" : 1.50,
-       "Pint" :0
+       "medium" : 1.50,
+       "large" :0
     }
      },
      {
@@ -1280,9 +1280,9 @@
       "description" : "",
       "price" : 0,
       "size" : {
-       "Half" : 0,
-       "Standard" : 1.50,
-       "Pint" :0
+       "small" : 0,
+       "medium" : 1.50,
+       "large" :0
     }
      }
    ]

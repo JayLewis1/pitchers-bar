@@ -43,10 +43,12 @@ type Props = PropsFromRedux
           <label htmlFor="details">Details or question</label>
           <textarea  id="details" name="details" placeholder="Enter some details about your booking for example how many guests, date and time, etc. Or just ask a question for us." />
         </span>
-        <input type="submit" value="send form">
-        </input>
+        <div className="btn-container">
+          <input type="submit" value="send form">
+          </input>
+          <button className="cancel-btn" onClick={() => toggleContact(false)}>Cancel</button>
+        </div>
       </form>
-      <button className="cancel-btn" onClick={() => toggleContact(false)}>Cancel</button>
     </div>
   )
 }

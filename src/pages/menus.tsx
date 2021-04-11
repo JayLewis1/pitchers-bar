@@ -3,12 +3,45 @@ import Layout from "../components/layout/layout";
 import Seo from "../components/seo";
 import Menu from "../components/menus/Menu";
 
+import { connect, ConnectedProps } from "react-redux";
+
 const breakfastMenu =  require("../../menus/food/breakfast.json");
 const mainMenu =  require("../../menus/food/main.json");
 const drinksMenu =  require("../../menus/drinks/drinks.json");
 
-const Menus = () => {
+interface ComponentProps {
+  menu : {
+    menuType: string
+  }
+}
+
+const mapState = (state: ComponentProps) => ({
+  menuType: state.menu.menuType
+})
+const mapDispatch = ({
+  setMenuTypes: (mtype : string) => ({type: "SET_MENU_TYPE", payload: mtype })
+})
+const connector = connect(mapState, mapDispatch);
+
+type PropsFromRedux = ConnectedProps<typeof connector>
+type Props = PropsFromRedux
+
+
+const Menus = ({menuType, setMenuTypes}: Props) => {
   const [menuSelection, setMenuSelection] = useState("breakfast");
+
+  useEffect(() => {
+    // If redux state is "food" then then setMenuSelection("food");
+    if(menuType !== "") {
+      setMenuSelection(menuType);
+    }
+console.log(menuType)
+    return () => {
+      // set redux func to empty string
+      setMenuTypes("")
+    }
+  },[menuType])
+
   return (
     <Layout>
       <Seo title="menus" />
@@ -62,4 +95,4 @@ const Menus = () => {
   )
 }
 
-export default Menus;
+export default connector(Menus);

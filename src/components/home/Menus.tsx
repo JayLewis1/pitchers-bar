@@ -1,7 +1,26 @@
 import React from 'react'
-import { Link } from "gatsby";
+import { connect, ConnectedProps } from "react-redux";
+import { navigate } from "@reach/router"  
 
-const Menus: React.FC = () => {
+interface ComponentProps {
+}
+
+const mapDispatch = ({
+  setMenuTypes: (mtype : string) => ({type: "SET_MENU_TYPE", payload: mtype })
+})
+
+const connector = connect(null, mapDispatch)
+
+type PropsFromRedux = ConnectedProps<typeof connector>
+type Props = PropsFromRedux
+
+const Menus = ({setMenuTypes}:Props) => {
+
+  const setMenuTypeAndPushToPage = (mType: string) => {
+    setMenuTypes(mType);
+    navigate("/menus")
+  }
+
   return (
     <div className="menu-home-container">
       <h3>Menus</h3>
@@ -13,10 +32,10 @@ const Menus: React.FC = () => {
           <span className="text-wrapper">
             <p className="heading">Burgers, Steak and vegetarian options</p>
             <p className="menus-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper. </p>
-            <Link to="/menus">
+            <button onClick={() => setMenuTypeAndPushToPage("main")}>
               <span className="btn-bg"></span>
               <p>View Menu</p>
-              </Link>
+            </button>
           </span>
         </div>
         <div className="wrapper">
@@ -26,10 +45,10 @@ const Menus: React.FC = () => {
           <span className="text-wrapper">
             <p  className="heading" >Cocktails, Pitchers, Spirits and more</p> 
             <p className="menus-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper. </p>
-            <Link to="/menus">
+            <button onClick={() => setMenuTypeAndPushToPage("drinks")}>
               <span className="btn-bg"></span>
               <p>View Menu</p>
-            </Link>
+            </button>
           </span>
         </div>
       </div>
@@ -37,4 +56,4 @@ const Menus: React.FC = () => {
   )
 }
 
-export default Menus;
+export default connector(Menus);

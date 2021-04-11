@@ -10,7 +10,6 @@ import * as React from "react"
 import { connect, ConnectedProps } from "react-redux";
 import Header from "./header"
 import Footer from "./footer";
-import Contact from "../contact/Contact";
 
 interface LayoutProps  {
   application: {
@@ -46,7 +45,6 @@ const Layout = ({ toggle, children }:Props) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Header />
         <main>{children}</main>
-        { toggle === true && <Contact /> }
       <Footer />
     </>
   )

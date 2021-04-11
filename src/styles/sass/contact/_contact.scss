@@ -143,17 +143,22 @@
 
   .form-wrapper {
     width: 450px;
+
     margin: 30px auto;
     margin-bottom: 100px;
     padding: 0;
     form {
       width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
       .input-wrapper {
         margin-bottom: 20px;
       }
     }
     .btn-wrapper {
       display: flex;
+      margin-top: auto;
     }
     .details-btn {
       background: none;
@@ -172,6 +177,52 @@
         width: 100%;
         padding: 0;
         text-align: left;
+      }
+    }
+  }
+  .details-wrapper {
+    width: 450px;
+    margin: auto;
+
+    .information {
+      width: 100%;
+      // height: 50px;
+      background-color: $lightGrey;
+      padding: 15px 10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      .img-wrapper {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .email-icon {
+          width: 80%;
+          height: 80%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        color: $white;
+        size: 1.3rem;
+      }
+    }
+    .address-wrapper {
+      align-items: flex-start;
+      padding-bottom: 10px;
+      span {
+        p {
+          margin-bottom: 5px;
+          color: $white;
+          size: 1.3rem;
+        }
       }
     }
   }

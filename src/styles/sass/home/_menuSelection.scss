@@ -16,7 +16,7 @@
     .wrapper {
       width: 50%;
       display: flex;
-  
+
       .img-wrapper {
         width: 30%;
         img {
@@ -39,28 +39,33 @@
           margin-top: 15px;
           margin-bottom: 30px;
         }
-        a {
+        a,
+        button {
           display: block;
+          outline: none;
           background-color: $purple;
           width: 180px;
-          margin-top: 15px;
           text-align: center;
           text-decoration: none;
           border-radius: 2px;
           position: relative;
           border: 2px $purple solid;
           overflow: hidden;
+          cursor: pointer;
+          margin: 0 auto;
+          margin-top: 15px;
           p {
             position: relative;
             color: $white;
+            font-family: $font;
             font-size: 1rem;
             font-weight: 400;
             margin: 10px 0;
             z-index: 2;
           }
         }
-        a:hover {
-          p{ 
+        button:hover {
+          p {
             color: $purple;
             font-weight: 500;
           }
@@ -79,7 +84,7 @@
     .menu-split {
       height: 100%;
       flex-direction: column;
-      .wrapper{ 
+      .wrapper {
         flex-direction: column;
         margin: 0 auto;
         margin-bottom: 80px;
@@ -120,7 +125,7 @@
     .menu-split {
       height: 100%;
       // flex-direction: column;
-      .wrapper{ 
+      .wrapper {
         flex-direction: column;
         margin: 0 auto;
         margin-bottom: 80px;
@@ -136,12 +141,11 @@
             width: 150%;
             height: 150%;
             transform: translate(0, -20px);
-
           }
         }
         .text-wrapper {
           width: 80%;
-    
+
           margin: 0 auto;
           margin-top: 30px;
           display: flex;
@@ -156,16 +160,16 @@
     }
   }
 
-.menus-info {
-  display: none;
-}
+  .menus-info {
+    display: none;
+  }
 }
 @media (min-width: 611px) and (max-width: 1100px) {
   .menu-home-container {
     width: 100%;
     .menu-split {
       height: 100%;
-      .wrapper{ 
+      .wrapper {
         flex-direction: column;
         .img-wrapper {
           width: 150px;
@@ -179,12 +183,11 @@
             width: 150%;
             height: 150%;
             transform: translate(0, -20px);
-
           }
         }
         .text-wrapper {
           width: 80%;
-        
+
           margin: 0 auto;
           margin-top: 30px;
           display: flex;

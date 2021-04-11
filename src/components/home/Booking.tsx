@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Booking: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -6,6 +6,15 @@ const Booking: React.FC = () => {
     email: "",
     details: ""
   })
+  const [btnDisabled, setBtnDisabled] = useState(true)
+
+  useEffect(() => {
+    if(formData.name !== "" && formData.email !== "" && formData.details !== "") {
+      setBtnDisabled(false);
+    }
+  }, [formData.name, formData.email, formData.details, btnDisabled])
+
+
   const onChange = (e:React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
     setFormData({...formData, [e.target.name] : e.target.value})
   }
@@ -39,7 +48,7 @@ const Booking: React.FC = () => {
         </div>
         <div className="form-wrapper">
           <p className="sub-heading">Use our form</p>
-          <form action="https://formspree.io/f/xbjqjppp"> 
+          <form action="https://formspree.io/f/xbjqjppp" method="POST"> 
             <span className="input-wrapper">
               <label htmlFor="name">Name</label>
               <input 
@@ -54,8 +63,8 @@ const Booking: React.FC = () => {
             <span className="input-wrapper">
               <label htmlFor="email">Email</label>
               <input 
-                type="text"
-                name="_replyto"
+                type="email"
+                name="email"
                 id="email"
                 placeholder="Enter your email"
                 value={formData.email}
@@ -73,7 +82,7 @@ const Booking: React.FC = () => {
                 onChange={(e) => onChange(e)}
                 />
             </span>
-            <button id="submit-btn">
+            <button id="submit-btn" disabled={btnDisabled}>
               <span className="btn-bg"></span>
               <p>Send Booking</p>
             </button>

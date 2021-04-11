@@ -14,8 +14,6 @@ interface ComponentProps {
 
   return (
     <div className="menu-wrapper">
-    {/* { name === "Drinks" || name === "Main" ? */}
-    <Fragment>
       <select className="section-selector" value={sectionName} onChange={(e) => onChange(e)}>
       {sections.map((s: any, index:number)=> (
         <option key={s.name} value={s.name}>{s.name}</option>
@@ -32,18 +30,6 @@ interface ComponentProps {
         }
       </Fragment>
     ))}
-    </Fragment>
-    {/* : 
-    <Fragment>
-    {sections.map((s: any, index:number)=> (
-        <MenuSection
-          key={index}
-          name={s.name}
-          items={s.items}
-        />
-  ))}
-  </Fragment>
-  } */}
   </div>
   )
 }

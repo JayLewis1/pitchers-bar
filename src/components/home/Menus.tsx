@@ -31,7 +31,7 @@ const Menus = ({setMenuTypes}:Props) => {
           </span>
           <span className="text-wrapper">
             <p className="heading">Burgers, Steak and vegetarian options</p>
-            <p className="menus-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper. </p>
+            <p className="menus-info">Our menu offers a variety of food such as breakfast, pub classics, grill, burgers and a kids menu too.</p>
             <button onClick={() => setMenuTypeAndPushToPage("main")}>
               <span className="btn-bg"></span>
               <p>View Menu</p>
@@ -44,7 +44,7 @@ const Menus = ({setMenuTypes}:Props) => {
           </span>
           <span className="text-wrapper">
             <p  className="heading" >Cocktails, Pitchers, Spirits and more</p> 
-            <p className="menus-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper. </p>
+            <p className="menus-info">Cocktails 2 for £10, range of draught beers and ciders, spirits and of course soft drinks for the designated drivers.</p>
             <button onClick={() => setMenuTypeAndPushToPage("drinks")}>
               <span className="btn-bg"></span>
               <p>View Menu</p>

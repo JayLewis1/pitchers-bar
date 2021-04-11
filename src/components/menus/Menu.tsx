@@ -14,11 +14,14 @@ interface ComponentProps {
 
   return (
     <div className="menu-wrapper">
-      <select className="section-selector" value={sectionName} onChange={(e) => onChange(e)}>
-      {sections.map((s: any, index:number)=> (
-        <option key={s.name} value={s.name}>{s.name}</option>
-      ))}
-      </select>
+      <span className="select-wrapper">
+        <select className="section-selector" value={sectionName} onChange={(e) => onChange(e)}>
+        {sections.map((s: any, index:number)=> (
+          <option key={s.name} value={s.name}>{s.name}</option>
+        ))}
+        </select>
+        <div className="select-arrow"></div>
+      </span>
     {sections.map((s: any,index:number)=> (
       <Fragment key={index}>
         { s.name ===  sectionName  && 

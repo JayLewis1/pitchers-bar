@@ -1,9 +1,26 @@
 import React, { Fragment, useEffect, useRef } from 'react'
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
+// import Img from "gatsby-image"
 
 const Landing: React.FC  = () => {
   const logoImage = useRef(null);
 
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    file(relativePath: {eq: "logo.png"}) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+          tracedSVG
+        }
+      }
+    }
+  }
+`)
   useEffect(() => {
     console.log(logoImage)
   }, [logoImage])
@@ -16,8 +33,9 @@ const Landing: React.FC  = () => {
           <img src="/assets/photos/home-img@2x.jpg" alt="Our Bar"/>
         </div>
         <div className="text-wrapper">
+        {/* <Img className="home-logo" fluid={data.file.childImageSharp.fluid} alt="Pitchers logo" /> */}
           <img 
-            src="/assets/logo.svg" 
+            src="/assets/logo/logo@2x.jpg" 
             alt="Pitchers Logo"
             ref={logoImage}/> 
             {/* { logoImage!.current! !== null  && 

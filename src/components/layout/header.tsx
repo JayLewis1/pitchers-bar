@@ -24,15 +24,6 @@ type Props = PropsFromRedux
 const Header = ({ toggle, toggleContact} : Props) => {
   const [menusDown, setMenusDown] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false)
-  const [menuType, setTypeOnHover] = useState("")
-  
-  const dropDownMenuSelection = () => {
-    if(menusDown === false) {
-      setMenusDown(true)
-    } else {
-      setMenusDown(false)
-    }
-  }
 
   const openMenu = () => {
     console.log("Clicked");
@@ -43,22 +34,11 @@ const Header = ({ toggle, toggleContact} : Props) => {
     }
   }
 
-  const toggleContactContainer = () => {
-    console.log("Clicked")
-    if(toggle === true) {
-      toggleContact(false);
-    } else {
-      toggleContact(true);
-    }
-   
-  }
-  
-
   return (
     <header className="header">
         <div className="wrapper">
           <Link to="/" className="logo">
-            <img src="/assets/logo.svg" alt="Pitchers Logo"/>  
+            <img src="/assets/logo/logo@2x.jpg" alt="Pitchers Logo"/>  
           </Link>  
           <nav>
             <ul>

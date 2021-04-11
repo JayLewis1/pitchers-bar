@@ -79,9 +79,27 @@
     text-transform: uppercase;
     margin-bottom: 30px;
   }
-  .section-selector {
+  .select-wrapper {
     width: 60%;
+    margin: 30px auto;
     height: 45px;
+    position: relative;
+    padding: 0;
+    .select-arrow {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 8px solid $white;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 15px;
+    }
+  }
+  .section-selector {
+    width: 100%;
+    height: 100%;
     border: none;
     background-color: $bg;
     border-radius: 5px;
@@ -90,12 +108,15 @@
     font-family: $font;
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 30px auto;
+    // margin: 30px auto;
     text-align: center;
     cursor: pointer;
     // padding: 5px 25px;
     text-align-last: center;
+    text-align: center;
     -webkit-appearance: none;
+    padding: 0 15px;
+    margin: 0;
   }
 
   .menu-section {
